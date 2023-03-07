@@ -14,7 +14,7 @@ This Wordpress plugin allows to impliment server side event tracking using Faceb
 
 Download plugin as ZIP from git. Then go to Plugins -> Add New, and then upload the plugin, and activate.
 
-Alternatively you can clone this repo in to the Wordpress plugin directory.
+Alternatively, you can clone this repo in to the Wordpress plugin directory.
 ```bash
   git clone https://github.com/aboobacker/capi-server-side-tracking.git
 ```
