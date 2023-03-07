@@ -1,4 +1,4 @@
-## 🚀 CAPI Server Side Tracking Plugin 
+## 🚀 CAPI Server Side Tracking Wordpress Plugin 
 This Wordpress plugin allows to impliment server side event tracking using Facebook Conversions API.
 
 ## Features
