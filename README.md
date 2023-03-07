@@ -19,6 +19,10 @@ Or clone this git in to the Wordpress plugin directory.
   git clone https://github.com/aboobacker/capi-server-side-tracking.git
 ```
 
+## Authors
+
+- [@aboobacker](https://www.github.com/aboobacker)
+
 ## Support
 
 For questions, comments and support email mail@aboobacker.com
