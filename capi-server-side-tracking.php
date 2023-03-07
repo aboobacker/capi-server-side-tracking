@@ -9,7 +9,7 @@
 **/
 
 $plugins_path = plugin_dir_path( __FILE__ ); 
-$plugins_url = plugins_url() . '/aboo-server-side-tracking'; 
+$plugins_url = plugins_url() . '/capi-server-side-tracking'; 
 
 // Define path and URL to the ACF plugin.
 define( 'MY_ACF_PATH', $plugins_path . '/includes/acf/' );
