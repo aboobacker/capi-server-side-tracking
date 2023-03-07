@@ -25,7 +25,7 @@ function my_acf_settings_url( $url ) {
 }
 
 // (Optional) Hide the ACF admin menu item.
-add_filter('acf/settings/show_admin', '__return_false');
+//add_filter('acf/settings/show_admin', '__return_false');
 
 // When including the PRO plugin, hide the ACF Updates menu
 add_filter('acf/settings/show_updates', '__return_false', 100);
