@@ -30,7 +30,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'label' => 'Standard Events',
                 'name' => 'standard_events',
                 'type' => 'repeater',
-                'instructions' => 'Transaction-based events such as <strong>Purchase</strong>, <strong>Start Trial</strong> and <strong>Subscribe</strong> are currently not available.',
+                'instructions' => 'Transaction-based events such as <strong>Purchase</strong> and <strong>Start Trial</strong> are currently not available.',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
