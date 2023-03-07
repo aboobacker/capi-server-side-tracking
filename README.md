@@ -25,4 +25,4 @@ Alternatively, you can clone this repo in to the Wordpress plugin directory.
 
 ## Support
 
-For questions, comments and support email mail@aboobacker.com
+For questions, comments and support, email mail@aboobacker.com
