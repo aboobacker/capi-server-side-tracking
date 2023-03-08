@@ -14,4 +14,4 @@ if( function_exists('acf_add_options_page') ) {
         'parent_slug'   => 'capi-event-settings',
     ));
 }
-//require_once('fields.php');
+require_once('fields.php');
