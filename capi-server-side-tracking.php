@@ -36,9 +36,7 @@ require_once('functions/actions.php');
 // include custom jQuery
 function aboo_pixel_include_jquery() {
     global $plugins_url;
-	// wp_deregister_script('jquery');
-	// wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, false);
     wp_enqueue_script('fbp_js', $plugins_url . '/js/fbp.js', array(), null, true);
-    wp_enqueue_script('capi_js', $plugins_url . '/js/capi.js', array(), null, true);
+    wp_enqueue_script('capi_js', $plugins_url . '/js/capi.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'aboo_pixel_include_jquery');
