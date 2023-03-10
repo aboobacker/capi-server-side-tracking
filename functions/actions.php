@@ -69,10 +69,10 @@ function generate_capi_scripts() {
                 $ajax_fn = "$.post( '".$plugins_url."/capi_api/api.php', { event_name: '".$custom_event['event_type']."', event_source_url: window.location.href, client_user_agent: navigator.userAgent, event_id: event_id_fn, fbp: fbp, external_id: external_id }).done(function( data ) { });";
                 $fbq_tag = '';
                 if(get_field('deduplication_method','option') == 'event_based'){
-                    $fbq_tag = "fbq('track', '".$event['event_type']."', {}, {eventID: event_id_fn });";
+                    $fbq_tag = "fbq('track', '".$custom_event['event_type']."', {}, {eventID: event_id_fn });";
                 }
                 else if(get_field('deduplication_method','option') == 'external_id'){
-                    $fbq_tag = "fbq('track', '".$event['event_type']."', {}, {fbp: fbp, external_id: external_id});";
+                    $fbq_tag = "fbq('track', '".$custom_event['event_type']."', {}, {fbp: fbp, external_id: external_id});";
                 }
                 if($custom_event['fire_event_with'] == 'css_selector') {
                     $txt .= "$('".$custom_event['selector']."').on('click', function(e){ var event_id_fn = event_id();";
