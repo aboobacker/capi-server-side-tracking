@@ -7,6 +7,7 @@ $event_source_url = $_POST['event_source_url'];
 $event_id = $fbp = $external_id = '';
 if(get_field('deduplication_method','option') == 'event_based'){
     $event_id = isset($_POST['event_id']) ? $_POST['event_id'] : '';
+    $fbp = isset($_POST['fbp']) ? $_POST['fbp'] : '';
 }
 else if(get_field('deduplication_method','option') == 'external_id'){
     $fbp = isset($_POST['fbp']) ? $_POST['fbp'] : '';

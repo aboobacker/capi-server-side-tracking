@@ -11,7 +11,7 @@ function generate_capi_scripts() {
             foreach($events as $event){
                 $ajax_fn = "$.post( '".$plugins_url."/capi_api/api.php', { event_name: '".$event['event_type']."', event_source_url: window.location.href, client_user_agent: navigator.userAgent, event_id: event_id_fn, fbp: fbp, external_id: external_id }).done(function( data ) { });";
                 if(get_field('deduplication_method','option') == 'event_based'){
-                    $fbq_tag = "fbq('track', '".$event['event_type']."', {}, {eventID: event_id_fn });";
+                    $fbq_tag = "fbq('track', '".$event['event_type']."', {}, {eventID: event_id_fn, fbp: fbp });";
                 }
                 else if(get_field('deduplication_method','option') == 'external_id'){
                     $fbq_tag = "fbq('track', '".$event['event_type']."', {}, {fbp: fbp, external_id: external_id});";
@@ -69,7 +69,7 @@ function generate_capi_scripts() {
                 $ajax_fn = "$.post( '".$plugins_url."/capi_api/api.php', { event_name: '".$custom_event['event_type']."', event_source_url: window.location.href, client_user_agent: navigator.userAgent, event_id: event_id_fn, fbp: fbp, external_id: external_id }).done(function( data ) { });";
                 $fbq_tag = '';
                 if(get_field('deduplication_method','option') == 'event_based'){
-                    $fbq_tag = "fbq('track', '".$custom_event['event_type']."', {}, {eventID: event_id_fn });";
+                    $fbq_tag = "fbq('track', '".$custom_event['event_type']."', {}, {eventID: event_id_fn, fbp: fbp });";
                 }
                 else if(get_field('deduplication_method','option') == 'external_id'){
                     $fbq_tag = "fbq('track', '".$custom_event['event_type']."', {}, {fbp: fbp, external_id: external_id});";
