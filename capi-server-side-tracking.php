@@ -3,7 +3,7 @@
 * Plugin Name: Server Side Tracking for CAPI
 * Plugin URI: https://www.aboobacker.com/
 * Description: This plugin helps to impliment server side tracking for Facebook Conversion API (CAPI).
-* Version: 1.3
+* Version: 2.0
 * Author: Aboobacker P
 * Author URI: https://www.aboobacker.com/
 **/
@@ -39,15 +39,7 @@ require_once('functions/actions.php');
 // include custom jQuery
 function aboo_pixel_include_jquery() {
     global $plugins_url;
-    if(get_field('test_event_code', 'option')){
-        if(is_user_logged_in()){
-            wp_enqueue_script('fbp_js', $plugins_url . '/js/fbp.js', array(), null, true);
-            wp_enqueue_script('capi_js', $plugins_url . '/js/capi.js', array('jquery'), null, true);
-        }
-    }
-    else {
-        wp_enqueue_script('fbp_js', $plugins_url . '/js/fbp.js', array(), null, true);
-        wp_enqueue_script('capi_js', $plugins_url . '/js/capi.js', array('jquery'), null, true);
-    }
+    wp_enqueue_script('fbp_js', $plugins_url . '/js/fbp.js?ver=2.0', array(), null, true);
+    wp_enqueue_script('capi_js', $plugins_url . '/js/capi.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'aboo_pixel_include_jquery');
