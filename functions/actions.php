@@ -19,11 +19,7 @@ function generate_capi_scripts() {
                 if($event['fire_event_with'] == 'css_selector') {
                     $txt .= "$('".$event['selector']."').on('click', function(e){ var event_id_fn = event_id();";
 					if($event['event_type'] == "Subscribe") { 
-                    	$txt .= "if(abem() == null) {
-                            if($('#del_newsletter_form input[type=\"email\"]').val()) {
-                                em = SHA256($('#del_newsletter_form input[type=\"email\"]').val().toLowerCase()); 
-                            }
-                        }"; 
+                    	$txt .= "if(abem() == null) { if($('#del_newsletter_form input[type=\"email\"]').val()) {  em = SHA256($('#del_newsletter_form input[type=\"email\"]').val().toLowerCase()); } }"; 
                 	}
                     if($event['click_text']){
                         $txt .= "if( $(e.target).text().toLowerCase().indexOf('".$event['click_text']."') >= 0){";
