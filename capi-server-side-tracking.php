@@ -8,8 +8,8 @@
 * Author URI: https://www.aboobacker.com/
 **/
 /*
-GitHub Theme URI: aboobacker/capi-server-side-tracking
-GitHub Theme URI: https://github.com/aboobacker/capi-server-side-tracking
+GitHub Plugin URI: aboobacker/capi-server-side-tracking
+GitHub Plugin URI: https://github.com/aboobacker/capi-server-side-tracking
 */
 
 $plugins_path = plugin_dir_path( __FILE__ ); 
