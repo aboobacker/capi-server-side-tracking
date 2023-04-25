@@ -3,7 +3,7 @@
 * Plugin Name: Server Side Tracking for CAPI
 * Plugin URI: https://www.aboobacker.com/
 * Description: This plugin helps to impliment server side tracking for Facebook Conversion API (CAPI).
-* Version: 2.4
+* Version: 2.5
 * Author: Aboobacker P
 * Author URI: https://www.aboobacker.com/
 **/
